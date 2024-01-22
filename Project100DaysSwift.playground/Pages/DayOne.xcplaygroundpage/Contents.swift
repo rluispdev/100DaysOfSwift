@@ -13,3 +13,16 @@ str = "GoodBye"
 var age = 38
 var population = 8_000_000
 
+//MARK: - Multi-line strings
+
+var str1 = """
+This goes
+over multiple
+lines
+"""
+///Without line breaks use: \
+var str2 = """
+This goes \
+over multiple \
+lines
+"""
