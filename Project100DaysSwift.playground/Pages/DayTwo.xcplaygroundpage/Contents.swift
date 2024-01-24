@@ -89,4 +89,58 @@ var numbers = Set<Int>()
 
 /// Other formas for Dictionary and Array
  var scores = Dictionary<String, Int>()
- var results = Array<Int>()
+ var results1 = Array<Int>()
+
+
+//MARK: - Enumerations
+
+enum DayOfWeek {
+    case sunday
+    case monday
+    case tuesday
+    case wednesday
+    case thursday
+    case friday
+    case saturday
+}
+
+//No duplicates.
+//Unordered.
+//Best performance - O(1)
+//Store elements of different types
+//Immutable
+
+//MARK: Enum associated values
+
+enum Activity {
+    case bored
+    case running(destination: String)
+    case talking(topic: String)
+    case singing(volume: Int)
+}
+
+let talking = Activity.talking(topic: "football")
+
+
+//MARK: Enum raw values
+
+enum Planet: Int {
+    case mercury
+    case venus
+    case earth
+    case mars
+}
+
+let earth = Planet(rawValue: 2)
+
+//You can assign one or more cases a specific value, and Swift will generate the rest. It’s not very natural for us to think of Earth as the second planet
+
+enum Planets: Int {
+    case mercury = 1
+    case venus //2
+    case earth //3
+    case mars  //4
+}
+
+let world = Planet(rawValue: 2) // Earth
+let world1 = Planets(rawValue: 2) //Venus
