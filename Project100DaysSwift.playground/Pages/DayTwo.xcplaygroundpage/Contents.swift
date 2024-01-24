@@ -54,3 +54,39 @@ let set = Set(["aardvark", "astronaut", "azalea"])
 //To a collection of values that can contain duplicates, or the order of your items matters, you should use an array:
 let pythons = ["Eric", "Graham", "John", "Michael", "Terry", "Terry"]
 
+//MARK: - Dictionaries
+
+let heights = [
+    "Taylor Swift": 1.78,
+    "Ed Sheeran": 1.73,
+    "Madonna": 1.73
+]
+
+//In Dictionary can have duplicate
+//Maintains order
+//Less performance - O(n)
+//Store elements of different types
+//Dictionary<Key, Value>
+
+let favoriteIceCream = [
+    "Paul": "Chocolate",
+    "Sophie": "Vanilla",
+]
+
+favoriteIceCream["Sophie"]
+//Dictionary default values
+favoriteIceCream[ "Charles", default: "Unknown"]
+
+    //MARK: - Empty Collections
+
+//Dictionary
+var teams = [String: String]()
+//Array
+var results = [Int]()
+// Set
+var words = Set<String>()
+var numbers = Set<Int>()
+
+/// Other formas for Dictionary and Array
+ var scores = Dictionary<String, Int>()
+ var results = Array<Int>()
