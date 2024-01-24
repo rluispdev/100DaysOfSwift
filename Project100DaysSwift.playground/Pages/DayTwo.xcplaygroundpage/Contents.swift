@@ -1,6 +1,6 @@
 //DayTwo
 
-//Arrays, Sets, Tuples, Arrays vs Sets vs Tuples, Dictionaries, Dictionaries Default Values, Empaty Collections, Enumerations, Enum Associated Values, Enum Raw Values, Ccmplex Types
+//Arrays, Sets, Tuples, Arrays vs Sets vs Tuples, Dictionaries, Dictionaries Default Values, Empaty Collections, Enumerations, Enum Associated Values, Enum Raw Values
 
 
 //Arrays
@@ -144,3 +144,5 @@ enum Planets: Int {
 
 let world = Planet(rawValue: 2) // Earth
 let world1 = Planets(rawValue: 2) //Venus
+
+
