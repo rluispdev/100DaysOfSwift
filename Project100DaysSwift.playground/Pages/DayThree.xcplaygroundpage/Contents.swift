@@ -45,5 +45,66 @@ firstScore >= secondScore
 
 // Work with strings: "Taylor" <= "Swift"
 
+//MARK: - Conditions
+
+let firstCard = 11
+let secondCard = 10
+
+if firstCard + secondCard == 2 {
+    print("Aces – lucky!")
+    ///chain conditions
+} else if firstCard + secondCard == 21 {
+    print("Blackjack!")
+} else {
+    print("Regular cards")
+}
+
+//MARK: - Combining conditions - && (and), || (or).
+
+let age1 = 12
+let age2 = 21
+
+if age1 > 18 && age2 > 18 {
+    print("Both are over 18")
+}
+
+if age1 > 18 || age2 > 18 {
+    print("At least one is over 18")
+}
+
+//MARK: - The ternary operator
+
+print(firstCard == secondCard ? "Cards are the same" : "Cards are different.")
+
+//MARK: - Switch statements
+
+let weather = "sunny"
+
+switch weather {
+case "rain":
+    print("Bring an umbrella")
+case "snow":
+    print("Wrap up warm")
+case "sunny":
+    print("Wear sunscreen")
+    fallthrough ///execution to continue on to the next case.
+default: /// is required because Swift makes sure you cover all possible cases so that no eventuality is missed off.
+    print("Enjoy your day!")
+}
+
+//MARK: - Range operators
+///For example, the range 1..<5 contains the numbers 1, 2, 3, and 4, whereas the range 1...5 contains the numbers 1, 2, 3, 4, and 5.
+
+let score = 85
+
+switch score {
+case 0..<50:
+    print("You failed badly.")
+case 50..<85:
+    print("You did OK.")
+default:
+    print("You did great!")
+}
 
 
+ 
