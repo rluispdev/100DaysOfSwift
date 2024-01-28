@@ -20,10 +20,16 @@ let driving = { (place: String) in
 //Chamada da closure com o argumento "London"
 driving("London")
 
+//MARK: -  Returning values from a closure
 
+let drivingWithReturn = { (place: String) -> String in
+    return "I'm going to \(place) in my car"
+}
+let message = drivingWithReturn("London")
+print(message)
 
+/// To  closure returns a string rather than printing the message directly, so we need to use -> String before in, then use return just like a normal function:
 
-//MARK: -
 //MARK: -
 //MARK: -
 //MARK: -
