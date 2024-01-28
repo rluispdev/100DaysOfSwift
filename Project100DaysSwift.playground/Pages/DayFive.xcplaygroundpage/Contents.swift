@@ -83,7 +83,7 @@ func playGame(name: String, cheat: Bool = false) throws {
     }
 }
 
-playGame(name: "button")
+try playGame(name: "button")
 
  //MARK: - Running throwing functions
 enum PasswordError: Error {
