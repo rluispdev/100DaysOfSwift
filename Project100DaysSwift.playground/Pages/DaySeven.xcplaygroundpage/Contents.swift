@@ -70,4 +70,31 @@ travel { (place: String) -> String in
  */
 
 
-//MARK: -
+//MARK: - Shorthand parameter names
+
+func loadData(input: () -> String) {
+    print("Loading...")
+    let str = input()
+    print("Loaded: \(str)")
+}
+loadData {
+    return "He thrusts his fists against the posts"
+}
+
+
+func manipulate(numbers: [Int], using algorithm: (Int) -> Int) {
+    for number in numbers {
+        let result = algorithm(number)
+        print("Manipulating \(number) produced \(result)")
+    }
+}
+ 
+func encrypt(password: String, using algorithm: (String) -> String) {
+    print("Encrypting password...")
+    let result = algorithm(password)
+    print("The result is \(result)")
+}
+encrypt(password: "t4ylor") { (password: String) in
+    print("Using top secret encryption!")
+    return "SECRET" + password + "SECRET"
+}
