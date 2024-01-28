@@ -5,7 +5,7 @@
 
 func travel(action: () -> Void) {
     print("I'm getting ready to go.")
-    // Chamada da closure passada como argumento
+    // Calling the closure passed as an argument
     action()
     print("I arrived!")
 }
@@ -14,10 +14,10 @@ func travel(action: () -> Void) {
 
 // Declaração de uma closure atribuída à variável 'driving'
 let driving = { (place: String) in
-    // Corpo da closure, que aceita um parâmetro 'place' e imprime uma mensagem
+    //Body of the closure, which takes a parameter 'place' and prints a message
     print("I'm going to \(place) in my car")
 }
-//Chamada da closure com o argumento "London"
+//Calling the closure with the argument "London"
 driving("London")
 
 //MARK: -  Returning values from a closure
@@ -45,5 +45,16 @@ func travel2(action: () -> Void) {
 travel2(action: driving2)
 
 
-//MARK: -
-//MARK: -
+//MARK: - Trailing closure syntax
+
+func travel3(action: () -> Void) {
+    print("I'm getting ready to go.")
+    action()
+    print("I arrived!")
+}
+
+///Because there aren’t any other parameters, we can eliminate the parentheses entirely.
+travel3 {
+    print("I'm driving in my car")
+}
+ 
