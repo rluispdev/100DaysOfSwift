@@ -18,7 +18,7 @@ tennis.name = "Lawn tennis"
 struct Sport1 {
     var name: String
     var isOlympicSport: Bool
-
+///Computed properties
     var olympicStatus: String {
         if isOlympicSport {
             return "\(name) is an Olympic sport"
@@ -34,7 +34,7 @@ print(chessBoxing.olympicStatus)
 struct Code {
     var language: String
     var containsErrors = false
-    
+    ///Computed properties
     var report: String {
         if containsErrors {
             return "This \(language) code has bugs!"
@@ -50,6 +50,7 @@ print(myCode.report)
 ///Example3
 struct Investor {
     var age: Int
+    ///Computed properties
     var investmentPlan: String {
         if age < 30 {
             return "Shares"
@@ -68,6 +69,7 @@ print(investor.investmentPlan)
 struct Progress {
     var task: String
     var amount: Int {
+        /// Property observers
         didSet {
             print("\(task) is now \(amount)% complete")
         }
@@ -78,3 +80,36 @@ var progress = Progress(task: "Loading data", amount: 0)
 progress.amount = 30
 progress.amount = 80
 progress.amount = 100
+
+//MARK: - Methods
+
+struct City {
+    var population: Int
+///Methods
+    func collectTaxes() -> Int {
+        return population * 1000
+    }
+}
+
+let london = City(population: 9_000_000)
+london.collectTaxes()
+
+///Example2
+struct User {
+    var name: String
+    var street: String
+    var city: String
+    var postalCode: String
+    func printAddress() {
+       print( """
+        \(name)
+        \(street)
+        \(city)
+        \(postalCode)
+        """)
+    }
+}
+
+var myAddress = User(name: "Rafael", street: "Rua ABC", city: "Pedra Bonita", postalCode: "3536400")
+myAddress.printAddress()
+
