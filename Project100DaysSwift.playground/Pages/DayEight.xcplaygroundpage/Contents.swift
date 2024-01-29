@@ -113,3 +113,16 @@ struct User {
 var myAddress = User(name: "Rafael", street: "Rua ABC", city: "Pedra Bonita", postalCode: "3536400")
 myAddress.printAddress()
 
+//MARK: - Mutating methods
+
+struct Person {
+    var name: String
+///To change a property inside a method, you need to mark it using the mutating keyword.
+    mutating func makeAnonymous() {
+        name = "Anonymous"
+    }
+}
+
+var person = Person(name: "Ed")
+person.makeAnonymous()
+
