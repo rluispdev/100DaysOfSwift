@@ -53,4 +53,27 @@ let test = Person(name: "Kevin")
 let test2 = Person2(name: "Pooh")
 let test3 = Person3(bear: "Lulu")
 
- 
+ //MARK: - Lazy properties
+
+struct FamilyTree {
+    init() {
+        print("Creating family tree!")
+    }
+}
+
+struct People {
+    var name: String
+
+/*
+ The use of lazy properties can be helpful when you have properties that may not be used immediately, and their initialization is a resource-intensive process. This helps improve performance by deferring initialization until it is actually needed.
+ */
+    lazy var familyTree = FamilyTree()
+
+    init(name: String) {
+        self.name = name
+    }
+}
+
+var ed = People(name: "Ed")
+ed.familyTree
+
