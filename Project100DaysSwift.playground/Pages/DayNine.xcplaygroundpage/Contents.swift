@@ -1,7 +1,17 @@
-//: [Previous](@previous)
+ //DayNine - Initializers, Referring to the current instance, Lazy properties, Static propperties and methods, Acess Control 
 
-import Foundation
+//MARK: Initializers
 
-var greeting = "Hello, playground"
+struct User {
+    var username: String
 
-//: [Next](@next)
+    init() {
+        username = "Anonymous"
+        print("Creating a new user!")
+    }
+}
+
+var user = User()
+user.username = "twostraws"
+
+//MARK: - Referring to the current instance
