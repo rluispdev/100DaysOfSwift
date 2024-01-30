@@ -77,3 +77,23 @@ struct People {
 var ed = People(name: "Ed")
 ed.familyTree
 
+//MARK: - Static propperties and methods
+
+
+struct Student {
+///A static property classSize to track the size of the class and an initializer that increments this value when a new student is created.
+    static var classSize = 0
+    var name: String
+
+    init(name: String) {
+        self.name = name
+        Student.classSize += 1
+    }
+}
+
+let edName = Student(name: "Ed")
+let taylor = Student(name: "Taylor")
+
+print(Student.classSize)
+
+
