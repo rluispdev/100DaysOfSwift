@@ -79,7 +79,6 @@ ed.familyTree
 
 //MARK: - Static propperties and methods
 
-
 struct Student {
 ///A static property classSize to track the size of the class and an initializer that increments this value when a new student is created.
     static var classSize = 0
@@ -97,3 +96,19 @@ let taylor = Student(name: "Taylor")
 print(Student.classSize)
 
 
+//MARK: - Acess Control
+
+struct Person4 {
+    private var id: String
+
+    init(id: String) {
+        self.id = id
+    }
+
+    func identify() -> String {
+        return "My social security number is \(id)."
+    }
+}
+
+let elon = Person4(id: "12345")
+print(elon.identify())
