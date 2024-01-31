@@ -47,3 +47,15 @@ class MetalBand: Band {
 }
 let lordi = MetalBand()
 lordi.singSong()
+
+//MARK: - Final classes
+
+final class Cat {
+    var name: String
+    var breed: String
+
+    init(name: String, breed: String) {
+        self.name = name
+        self.breed = breed
+    }
+}
