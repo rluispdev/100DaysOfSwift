@@ -116,3 +116,29 @@ var dave = tim
 dave.clients.append("Sam")
 print(tim.clients.count)
 print(dave.clients.count)
+
+
+//MARK: - Deinitializers
+
+class Person {
+    var name1 = "John Doe"
+
+    init() {
+        print("\(name1) is alive!")
+    }
+    
+    deinit {
+        print("\(name1) is no more!")
+    }
+
+    func printGreeting() {
+        print("Hello, I'm \(name1)")
+    }
+}
+
+for _ in 1...3 {
+    let person = Person()
+    person.printGreeting()
+}
+
+
