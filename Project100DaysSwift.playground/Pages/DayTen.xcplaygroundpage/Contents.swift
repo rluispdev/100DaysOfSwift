@@ -141,4 +141,15 @@ for _ in 1...3 {
     person.printGreeting()
 }
 
+//MARK: - Mutability
 
+///The mutating keyword in Swift is used to indicate that a method can modify the properties of a structure (struct) or enumeration (enum).
+
+struct Park {
+    var numberOfFlowers = 1000
+    mutating func plantFlowers() {
+        numberOfFlowers += 50
+    }
+}
+var park = Park()
+park.plantFlowers()
