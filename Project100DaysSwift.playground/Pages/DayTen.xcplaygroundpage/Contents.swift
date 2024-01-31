@@ -59,3 +59,60 @@ final class Cat {
         self.breed = breed
     }
 }
+
+//MARK: - Copying objects
+
+class Singer {
+    var name = "Taylor Swift"
+}
+
+var singer = Singer()
+print(singer.name)
+
+var singerCopy = singer
+singerCopy.name = "Justin Bieber"
+
+print(singer.name)
+
+
+class Author {
+    var name = "Anonymous"
+}
+var dickens = Author()
+dickens.name = "Charles Dickens"
+var austen = dickens
+austen.name = "Jane Austen"
+print(dickens.name)
+print(austen.name)
+
+
+class Hater {
+    var isHating = true
+}
+var hater1 = Hater()
+var hater2 = hater1
+hater1.isHating = false
+print(hater1.isHating)
+print(hater2.isHating)
+
+class Magazine {
+    var pageCount = 132
+}
+var example = Magazine()
+var wired = example
+wired.pageCount = 164
+var vogue = example
+vogue.pageCount = 128
+print(wired.pageCount)
+print(vogue.pageCount)
+
+
+class Hairdresser {
+    var clients = [String]()
+}
+var tim = Hairdresser()
+tim.clients.append("Jess")
+var dave = tim
+dave.clients.append("Sam")
+print(tim.clients.count)
+print(dave.clients.count)
