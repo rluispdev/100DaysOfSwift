@@ -32,3 +32,18 @@ class Poodle: Horse {
     }
 }
 
+//MARK: - Overriding methods
+
+class Band {
+    func singSong() {
+        print("Here's a new song.")
+    }
+}
+class MetalBand: Band {
+    ///Swift requires us to use override func rather than just func when overriding a method
+    override func singSong() {
+        print("Ruuuuh ruh ruh ruuuuuh!")
+    }
+}
+let lordi = MetalBand()
+lordi.singSong()
