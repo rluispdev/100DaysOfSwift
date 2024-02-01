@@ -33,4 +33,39 @@ print(abc.channel)
 
 /// No is possible creat a protocol only with  set.
 
+//MARK: - Protocol Inheritance
+
+protocol Payable {
+    func calculateWages() -> Int
+}
+
+protocol NeedsTraining {
+    func study() -> String
+}
+
+protocol HasVacation {
+    func takeVacation(days: Int) -> Int
+}
+
+protocol Employee: Payable, NeedsTraining, HasVacation { }
+
+
+struct HumanResources: Employee{
+    func calculateWages() -> Int {
+        var days = 530
+        return days
+    }
+    
+    func study() -> String {
+        return  "500"
+    }
+    
+    func takeVacation(days: Int) -> Int {
+        return days
+    }
+    
+}
+
+let Ben =  HumanResources()
+print("Ben study \(Ben.study()) days for year, worked \(Ben.calculateWages()), and your vaction is \(Ben.takeVacation(days: 24)) days")
 
