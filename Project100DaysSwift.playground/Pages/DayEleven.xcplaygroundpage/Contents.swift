@@ -69,3 +69,18 @@ struct HumanResources: Employee{
 let Ben =  HumanResources()
 print("Ben study \(Ben.study()) days for year, worked \(Ben.calculateWages()), and your vaction is \(Ben.takeVacation(days: 24)) days")
 
+//MARK: - Extensions
+
+extension Int {
+    func squared() -> Int {
+        return self * self
+    }
+}
+
+let number = 45
+number.squared()
+
+print(number.squared())
+
+
+ //MARK:  Protocol extensions
