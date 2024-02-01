@@ -1,7 +1,4 @@
-//: [Previous](@previous)
+ //DayEleven- Protocols, Protocol Inheritance, Exetencions, Protocol extencions, Protocol-oriented programing
 
-import Foundation
 
-var greeting = "Hello, playground"
-
-//: [Next](@next)
+//MARK: Protocols
