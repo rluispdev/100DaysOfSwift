@@ -52,8 +52,8 @@ protocol Employee: Payable, NeedsTraining, HasVacation { }
 
 struct HumanResources: Employee{
     func calculateWages() -> Int {
-        var days = 530
-        return days
+        var days1 = 530
+        return days1
     }
     
     func study() -> String {
@@ -83,4 +83,46 @@ number.squared()
 print(number.squared())
 
 
- //MARK:  Protocol extensions
+ //MARK: -  Protocol extensions
+
+let pythons = ["Eric", "Graham", "John", "Michael", "Terry", "Terry"]
+let beatles = Set(["John", "Paul", "George", "Ringo"])
+
+extension Collection {
+    func summarize() {
+        print("There are \(count) of us:")
+
+        for name in self {
+            print(name)
+        }
+    }
+}
+
+pythons.summarize()
+beatles.summarize()
+
+
+protocol Anime {
+    var availableLanguages: [String] { get set }
+    func watch(in language: String)
+}
+extension Anime {
+    func watch(in language: String) {
+        if availableLanguages.contains(language) {
+            print("Now playing in \(language)")
+        } else {
+            print("Unrecognized language.")
+        }
+    }
+}
+
+struct Naruto: Anime {
+    var availableLanguages: [String]
+    
+    
+}
+
+let narutoInstance = Naruto(availableLanguages: ["Portuguese", "English"])
+narutoInstance.watch(in: "Japapnese")
+narutoInstance.watch(in: "Portuguese")
+
