@@ -96,3 +96,26 @@ func isLongEnough(_ string: String?) -> Bool {
 if isLongEnough("Mario Odyssey") {
     print("Let's play that!")
 }
+
+// MARK: -  Force unwrapping
+
+let str = "5"///let str = "" -> __lldb_expr_86/DayTwelve.xcplaygroundpage:104: Fatal error: Unexpectedly found nil while unwrapping an Optional value
+let num = Int(str)
+let num1 = Int(str)!
+print(num1)
+
+// MARK: - Implicitly unwrapped optionals
+
+let age2: Int! = nil /// nil is  allow us to represent the absence of a value.
+
+
+// MARK: - Nil coalescing
+
+let lightsaberColor: String? = "green"
+let color = lightsaberColor ?? "blue"
+
+// MARK: - Optional chaining
+
+let names = ["John", "Paul", "George", "Ringo"]
+let beatle = names.first?.uppercased()
+
