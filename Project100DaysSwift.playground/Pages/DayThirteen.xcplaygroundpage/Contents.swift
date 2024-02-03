@@ -74,3 +74,92 @@ var latitude1 = 36.166667
 
 "Your name is \(name9), your age is \(age2), and your latitude is \(latitude1)"
 
+//MARK: Array
+var songs = ["Shake it Off", "You Belong with Me", "Back to December"]
+type(of: songs)
+
+var songs2 = ["Shake it Off", "You Belong with Me", "Love Story"]
+var songs3 = ["Today was a Fairytale", "Welcome to New York", "Fifteen"]
+var both1 = songs2 + songs3
+
+//MARK: Dictionaries
+
+var person = [
+                "first": "Taylor",
+                "middle": "Alison",
+                "last": "Swift",
+                "month": "December",
+                "website": "taylorswift.com"
+            ]
+
+person["middle"]
+person["month"]
+
+//MARK: Conditional statements
+
+var action: String
+var person2 = "hater"
+
+if person2 == "hater" {
+    action = "hate"
+}
+
+ 
+var stayOutTooLate2 = true
+var nothingInBrain = true
+/// ! (not) operator
+if !stayOutTooLate2 && nothingInBrain {
+    action = "cruise"
+}
+
+
+//MARK: Loop
+
+//For in
+for i in 1...10 {
+    print("\(i) x 10 is \(i * 10)")
+}
+
+
+var str = "Fakers gonna"
+
+for _ in 1...5 {
+    str += " fake"
+}
+
+print(str)
+
+//MARK: Switch case
+
+let liveAlbums = 2
+
+switch liveAlbums {
+case 0:
+    print("You're just starting out")
+
+case 1:
+    print("You just released iTunes Live From SoHo")
+
+case 2:
+    print("You just released Speak Now World Tour")
+
+default:
+    print("Have you done something new?")
+}
+
+///Exemple2
+let studioAlbums = 5
+
+switch studioAlbums {
+case 0...1:
+    print("You're just starting out")
+
+case 2...3:
+    print("You're a rising star")
+
+case 4...5:
+    print("You're world famous!")
+
+default:
+    print("Have you done something new?")
+}
