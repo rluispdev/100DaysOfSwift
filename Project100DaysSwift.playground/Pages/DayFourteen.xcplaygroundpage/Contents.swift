@@ -60,3 +60,50 @@ func getMeaningOfLife() -> Int {
     42
 }
 
+//MARK: - Optionals
+
+func getHaterStatus() -> String? {
+    return "Hate"
+}
+
+func getHaterStatus(weather: String) -> String? {
+    if weather == "sunny" {
+        return nil
+    } else {
+        return "Hate"
+    }
+}
+
+var status = getHaterStatus(weather: "rain")
+///unwrapped
+if let unwrappedStatus = status {
+    print(unwrappedStatus)
+}else{
+    print("No hate today")
+}
+
+
+///Force unwrapping optionals
+
+func yearAlbumReleased(name: String) -> Int? {
+    if name == "Taylor Swift" { return 2006 }
+    if name == "Fearless" { return 2008 }
+    if name == "Speak Now" { return 2010 }
+    if name == "Red" { return 2012 }
+    if name == "1989" { return 2014 }
+
+    return nil
+}
+
+var year = yearAlbumReleased(name: "Red")
+
+if year == nil {
+    print("There was an error")
+} else {
+    print("It was released in \(year!).")
+}
+
+///Implicitly unwrapped optionals
+var username: String! = "UsuarioLogado"
+let welcomeMessage: String = "Bem-vindo, \(username)!"
+print(welcomeMessage)
