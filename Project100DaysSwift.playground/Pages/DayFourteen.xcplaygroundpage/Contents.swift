@@ -152,4 +152,17 @@ func getHaterStatus(weather: WeatherType) -> String? {
 getHaterStatus(weather: WeatherType.wind(speed: 5))
 print(getHaterStatus(weather: .sun))
 
-//MARK: -
+//MARK: - Struct
+
+struct Person {
+    var clothes: String
+    var shoes: String
+    
+    func describe() {
+        print("I like wearing \(clothes) with \(shoes)")
+    }
+}
+    let taylor = Person(clothes: "T-shirts blue", shoes: "sneakers.")
+    taylor.describe()
+
+ 
