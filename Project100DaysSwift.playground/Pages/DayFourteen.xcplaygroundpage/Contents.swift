@@ -165,4 +165,24 @@ struct Person {
     let taylor = Person(clothes: "T-shirts blue", shoes: "sneakers.")
     taylor.describe()
 
- 
+//MARK: - Class
+
+class Singer {
+    var name: String
+    var age: Int
+
+    init(name: String, age: Int) {
+        self.name = name
+        self.age = age
+    }
+
+    func sing() {
+        print("La la la la")
+    }
+}
+
+var taylor1 = Singer(name: "Taylor", age: 25)
+taylor1.name
+taylor1.age
+taylor1.sing()
+
