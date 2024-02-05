@@ -53,3 +53,16 @@ var fan = Person2(age: 25)
 print(fan.ageInDogYears)
 
 
+//MARK: - Static properties and methods
+struct TaylorFan {
+    static var favoriteSong = "Look What You Made Me Do"
+
+    var name: String
+    var age: Int
+}
+
+let fan1 = TaylorFan(name: "James", age: 25)
+print(TaylorFan.favoriteSong)
+
+
+//MARK: -
