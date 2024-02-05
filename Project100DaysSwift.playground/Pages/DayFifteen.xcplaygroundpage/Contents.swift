@@ -1,3 +1,5 @@
+import SwiftUI
+
 //DayFifteen - Properties, Static properties and methods, acess control, Polymorphism and typecasting, Closures
 
 //MARK: Properties
@@ -155,4 +157,21 @@ for album in allAlbums1 {
 let number = 5
 let text = String(number)
 print(text)
+
+//MARK: - Closures
+
+let message = "Button pressed"
+
+Button("Press Me", action: {
+    print(message)
+})
+
+
+///Trailing closures
+Button {
+    print("The button was pressed")
+} label: {
+    Image("press-me")
+}
+
 
