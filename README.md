@@ -5,7 +5,7 @@ Projeto em andamento,  esse projeto tem por objetivo fortalecer ainda mais o apr
 ## 🔨 Etapas do projeto
 - `Etapa 1` `Introduction to Swift`:    **Concluído** ✔️
 - `Etapa 2` `Consolidation I`:   **Concluído** ✔️
-- `Etapa 3` `Starting iOS`: _Em desenvolvimento..._
+- `Etapa 3` `Starting iOS`:   **Projects**   `  1 - Storm View `,  `  2  `,  `  3  `
 - `Etapa 4` `Consolidation II`:  ----
 - `Etapa 5` `Web views, user input, and Auto Layout`:  ----
 - `Etapa 6` `Consolidation III`:  ----
