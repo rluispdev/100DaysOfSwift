@@ -5,7 +5,7 @@ Projeto em andamento,  esse projeto tem por objetivo fortalecer ainda mais o apr
 ## 🔨 Etapas do projeto
 - `Etapa 1` `Introduction to Swift`:    **Concluído** ✔️
 - `Etapa 2` `Consolidation I`:   **Concluído** ✔️
-- `Etapa 3` `Starting iOS`:   **Projects**:   `Storm Viewer`    <a href="https://github.com/rluispdev/StormViewer/tree/main/" target="_blank">  **_link_** </a>,  
+- `Etapa 3` `Starting iOS`:   **Projects**:   `Storm Viewer`    <a href="https://github.com/rluispdev/StormViewer/tree/main/" target="_blank">  **_link_** </a>,    ` 📕 runningUpdate: 10/02/2024`
 - `Etapa 4` `Consolidation II`:  ----
 - `Etapa 5` `Web views, user input, and Auto Layout`:  ----
 - `Etapa 6` `Consolidation III`:  ----
