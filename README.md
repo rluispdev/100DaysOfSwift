@@ -1,4 +1,4 @@
-![Template rluipdev](https://github.com/rluispdev/100DaysOfSwift/blob/14cbf131e04de5077a17366b45080d84e60d637b/Template/rluispdev.png)
+![Template rluipdev]( https://github.com/rluispdev/100DaysOfSwift/blob/main/Template/rluispdev%20(1).png)
  # Resumo do projeto
 Projeto em andamento,  esse projeto tem por objetivo fortalecer ainda mais o aprendizado de Swift a abrir o cohecimento no desenvolvimento em UIKit.
 
